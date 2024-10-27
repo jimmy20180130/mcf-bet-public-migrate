@@ -1,0 +1,23 @@
+{
+  "name": "mcf-bet-public-migrate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "migrate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg migrate.js -t node18-win-x64 -c package.json"
+  },
+  "author": "jimmy20180130",
+  "license": "ISC",
+  "dependencies": {
+    "sqlite3": "^5.1.7"
+  },
+  "pkg": {
+      "assets": [
+          "node_modules/**/*"
+      ],
+      "scripts": [
+          "migrate.js"
+      ]
+    }
+}
